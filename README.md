@@ -1,40 +1,42 @@
-#LAX Flight Delay Analysis (2015–2017)
+LAX Flight Delay Analysis (2015–2017)
 Power BI · SQL · Data Modeling · Data Storytelling
 
-##Projektbeschreibung
+Projektbeschreibung
 Dieses Projekt analysiert Flugverspätungen am Los Angeles International Airport (LAX) im Zeitraum 2015–2017.
 Ziel ist es, Muster, Ursachen und kritische Zeiträume der Verspätungen zu identifizieren und visuell aufzubereiten.
-Die Analyse wurde im Rahmen eines Data‑Analytics‑Trainings durchgeführt und umfasst den gesamten Workflow:
+
+Die Analyse umfasst den gesamten Workflow:
 Datenimport → Bereinigung → Modellierung → Measures → Visualisierung → Storytelling.
 
-##Datenbasis
+Datenbasis
 Die Daten stammen aus einer PostgreSQL‑Datenbank (flights) sowie einer ergänzenden CSV‑Datei (UNIQUE_CARRIERS).
 
-##Datenmodellierung
-Die Modellierung erfolgte in Power BI:
+Datenbereinigung & Transformation
+▪ Zeitkorrekturen (Umwandlung von Textwerten in gültige Zeitformate)
+▪ Korrektur ungültiger Werte (2400 → 23:59)
+▪ Datenmodellierung
 
-##Visualisierungen (Power BI Dashboards)
-▪ Gesamtüberblick
-▪ Fluggesellschaften
-▪ Zeitliche Muster
-▪ Detail-Analyse
+Visualisierungen (Power BI Dashboards)
+1. Gesamtüberblick
+2. Fluggesellschaften
+3. Zeitliche Muster
+4. Detail-Analyse
 
-
-##Kernergebnisse
-▪ 70 % aller Flüge sind unpüntlich
+Kernergebnisse
+▪ 70 % aller Flüge verspätet
 ▪ Durchschnittliche Verspätung: 26 Minuten
-▪ Ankünfte deutlich stärker betroffen (78 %) als Abflüge (50 %)
+▪ Ankünfte deutlich stärker betroffen (82 %) als Abflüge (58 %)
 ▪ Starke Peaks in Nachtstunden und Wintermonaten
 ▪ Wenige Airlines verursachen Großteil der Verspätungen (Southwest, American, SkyWest)
 
+Empfehlungen
+▪ Einsatz von Prognosemodellen zur frühzeitigen Erkennung von Delay‑Risiken
+▪ Optimierung der Nacht‑Slots und Bodenprozesse
+▪ Zusammenarbeit mit Airlines mit hohen Verspätungsraten
+▪ Berücksichtigung saisonaler Peaks (Winter/Sommer)
 
-##Empfehlungen
-Einsatz von Prognosemodellen zur frühzeitigen Erkennung von Delay‑Risiken
-Optimierung der Nacht‑Slots und Bodenprozesse
-Zusammenarbeit mit Airlines mit hohen Verspätungsraten
-Berücksichtigung saisonaler Peaks (Winter/Sommer)
-
-
-##Technologien
-Power BI
-SQL / PostgreSQL (Datenextraktion)
+Technologien
+▪ Power BI (Datenmodell, DAX, Visualisierung)
+▪ Power Query (Transformationen)
+▪ SQL / PostgreSQL (Datenextraktion)
+▪ DAX (Measures)
